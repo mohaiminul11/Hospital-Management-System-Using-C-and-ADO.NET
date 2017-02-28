@@ -1,0 +1,45 @@
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\BLL.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\obj\Debug\BLL.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\obj\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\obj\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\BLL\obj\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\obj\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\BLL\obj\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\obj\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\BLL\obj\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\obj\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\BLL.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\BLL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\BLL\obj\Debug\BLL.pdb

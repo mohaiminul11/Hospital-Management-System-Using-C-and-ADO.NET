@@ -1,0 +1,40 @@
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\obj\Debug\DAL.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\obj\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Google Drive\C# Projects\Hospital Management2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\obj\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\obj\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Hospital Management2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\obj\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\obj\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\2\Hospital Management2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\obj\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\obj\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\3\Hospital Management2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\obj\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\obj\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\bin\Debug\DAL.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\bin\Debug\DAL.pdb
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mohaiminul11\Desktop\Project\4\Hospital Management2\DAL\bin\Debug\EntityFramework.xml

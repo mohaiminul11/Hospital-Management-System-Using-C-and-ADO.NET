@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Appoinment">
+    <Key>
+      <PropertyRef Name="appoinmentID" />
+    </Key>
+    <Property Name="appoinmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DoctorUname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PatientPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Done" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BedTable">
+    <Key>
+      <PropertyRef Name="BedId" />
+    </Key>
+    <Property Name="BedId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Assigned" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PatientPhone" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pass" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeeTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FeeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Charge" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PatientInfo">
+    <Key>
+      <PropertyRef Name="PhoneNo" />
+    </Key>
+    <Property Name="PatientId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactAddress" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Receptionist">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Transection">
+    <Key>
+      <PropertyRef Name="TransectionId" />
+    </Key>
+    <Property Name="TransectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientPhone" Type="varchar" MaxLength="50" />
+    <Property Name="Total" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Appoinment_Doctor2">
+    <End Role="Doctor" Type="Self.Doctor" Multiplicity="1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctor">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="DoctorUname" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appoinment_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BedTable_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="0..1" />
+    <End Role="BedTable" Type="Self.BedTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="BedTable">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transection_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="0..1" />
+    <End Role="Transection" Type="Self.Transection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="Transection">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HospitalModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Appoinment" EntityType="Self.Appoinment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BedTable" EntityType="Self.BedTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctor" EntityType="Self.Doctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeeTable" EntityType="Self.FeeTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PatientInfo" EntityType="Self.PatientInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Receptionist" EntityType="Self.Receptionist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transection" EntityType="Self.Transection" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Appoinment_Doctor2" Association="Self.FK_Appoinment_Doctor2">
+      <End Role="Doctor" EntitySet="Doctor" />
+      <End Role="Appoinment" EntitySet="Appoinment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appoinment_PatientInfo" Association="Self.FK_Appoinment_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfo" />
+      <End Role="Appoinment" EntitySet="Appoinment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BedTable_PatientInfo" Association="Self.FK_BedTable_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfo" />
+      <End Role="BedTable" EntitySet="BedTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transection_PatientInfo" Association="Self.FK_Transection_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfo" />
+      <End Role="Transection" EntitySet="Transection" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

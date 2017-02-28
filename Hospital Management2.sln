@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "Hospital Management2\UI.csproj", "{F977D980-06D9-4BA6-8533-6EFF6BDA40AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{F0939CA6-1E58-44E0-ACFF-2DB839ADCA21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{675A323B-B5B4-48F8-872A-20E07234B101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F977D980-06D9-4BA6-8533-6EFF6BDA40AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F977D980-06D9-4BA6-8533-6EFF6BDA40AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F977D980-06D9-4BA6-8533-6EFF6BDA40AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F977D980-06D9-4BA6-8533-6EFF6BDA40AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0939CA6-1E58-44E0-ACFF-2DB839ADCA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0939CA6-1E58-44E0-ACFF-2DB839ADCA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0939CA6-1E58-44E0-ACFF-2DB839ADCA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0939CA6-1E58-44E0-ACFF-2DB839ADCA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675A323B-B5B4-48F8-872A-20E07234B101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675A323B-B5B4-48F8-872A-20E07234B101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675A323B-B5B4-48F8-872A-20E07234B101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675A323B-B5B4-48F8-872A-20E07234B101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Appoinment">
+    <Key>
+      <PropertyRef Name="appoinmentID" />
+    </Key>
+    <Property Name="appoinmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DoctorUname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PatientPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Done" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Doctor" Relationship="Self.FK_Appoinment_Doctor2" FromRole="Appoinment" ToRole="Doctor" />
+    <NavigationProperty Name="PatientInfo" Relationship="Self.FK_Appoinment_PatientInfo" FromRole="Appoinment" ToRole="PatientInfo" />
+  </EntityType>
+  <EntityType Name="BedTable">
+    <Key>
+      <PropertyRef Name="BedId" />
+    </Key>
+    <Property Name="BedId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Assigned" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PatientPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PatientInfo" Relationship="Self.FK_BedTable_PatientInfo" FromRole="BedTable" ToRole="PatientInfo" />
+  </EntityType>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Appoinments" Relationship="Self.FK_Appoinment_Doctor2" FromRole="Doctor" ToRole="Appoinment" />
+  </EntityType>
+  <EntityType Name="FeeTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Charge" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PatientInfo">
+    <Key>
+      <PropertyRef Name="PhoneNo" />
+    </Key>
+    <Property Name="PatientId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ContactAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Appoinments" Relationship="Self.FK_Appoinment_PatientInfo" FromRole="PatientInfo" ToRole="Appoinment" />
+    <NavigationProperty Name="BedTables" Relationship="Self.FK_BedTable_PatientInfo" FromRole="PatientInfo" ToRole="BedTable" />
+    <NavigationProperty Name="Transections" Relationship="Self.FK_Transection_PatientInfo" FromRole="PatientInfo" ToRole="Transection" />
+  </EntityType>
+  <EntityType Name="Receptionist">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Transection">
+    <Key>
+      <PropertyRef Name="TransectionId" />
+    </Key>
+    <Property Name="TransectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PatientPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="PatientInfo" Relationship="Self.FK_Transection_PatientInfo" FromRole="Transection" ToRole="PatientInfo" />
+  </EntityType>
+  <Association Name="FK_Appoinment_Doctor2">
+    <End Role="Doctor" Type="Self.Doctor" Multiplicity="1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctor">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="DoctorUname" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appoinment_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="1" />
+    <End Role="Appoinment" Type="Self.Appoinment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="Appoinment">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BedTable_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="0..1" />
+    <End Role="BedTable" Type="Self.BedTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="BedTable">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transection_PatientInfo">
+    <End Role="PatientInfo" Type="Self.PatientInfo" Multiplicity="0..1" />
+    <End Role="Transection" Type="Self.Transection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientInfo">
+        <PropertyRef Name="PhoneNo" />
+      </Principal>
+      <Dependent Role="Transection">
+        <PropertyRef Name="PatientPhone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HospitalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Appoinments" EntityType="Self.Appoinment" />
+    <EntitySet Name="BedTables" EntityType="Self.BedTable" />
+    <EntitySet Name="Doctors" EntityType="Self.Doctor" />
+    <EntitySet Name="FeeTables" EntityType="Self.FeeTable" />
+    <EntitySet Name="PatientInfoes" EntityType="Self.PatientInfo" />
+    <EntitySet Name="Receptionists" EntityType="Self.Receptionist" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Transections" EntityType="Self.Transection" />
+    <AssociationSet Name="FK_Appoinment_Doctor2" Association="Self.FK_Appoinment_Doctor2">
+      <End Role="Doctor" EntitySet="Doctors" />
+      <End Role="Appoinment" EntitySet="Appoinments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appoinment_PatientInfo" Association="Self.FK_Appoinment_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfoes" />
+      <End Role="Appoinment" EntitySet="Appoinments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BedTable_PatientInfo" Association="Self.FK_BedTable_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfoes" />
+      <End Role="BedTable" EntitySet="BedTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transection_PatientInfo" Association="Self.FK_Transection_PatientInfo">
+      <End Role="PatientInfo" EntitySet="PatientInfoes" />
+      <End Role="Transection" EntitySet="Transections" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
